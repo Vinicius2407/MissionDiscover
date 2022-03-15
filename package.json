@@ -1,0 +1,27 @@
+{
+  "name": "missiondiscover",
+  "version": "1.0.0",
+  "description": "Projeto desenvolvido para gerenciar perguntas anonimas de usuários.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "nodemon ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vinicius2407/MissionDiscover.git"
+  },
+  "keywords": [],
+  "author": "Vinícius Silva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vinicius2407/MissionDiscover/issues"
+  },
+  "homepage": "https://github.com/Vinicius2407/MissionDiscover#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
