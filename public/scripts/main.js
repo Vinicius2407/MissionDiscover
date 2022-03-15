@@ -1,16 +1,27 @@
-import Modal from './modal.js';
+import Modal from './modal'
+//
 
-const modal = Modal();
+const modal = Modal()
 
-//Pegar todos os botões com a class "check"
-const checkButtons = document.querySelectorAll('a.check');
+const modalTittle = document.querySelector('.modal h2')
+const modalDescription = document.querySelector('.modal p')
+const modalButton = document.querySelector('.modal button')
+
+//
+
+const checkButtons = document.querySelectorAll('.actions a.check')
 
 checkButtons.forEach(button => {
-    //adicionar a escuta
-    button.addEventListener("click", event => {
-        //abrir modal
-        modal.open();
-    });
-});
+  button.addEventlistener('click', handleClick)
+})
 
-//Pegar quando o 'marcar como lido' for clicado
+const deleteButton = document.querySelectorAll('.actions a.delete')
+
+deleteButton.forEach(button => {
+  button.addEventListener('click', handleClick(event, (check = false))
+})
+
+function handleClick(event, check = true) {
+  modalTittle.innerHTML = check ? "Marcar como lido" : "Excluir essa pergunta"
+  modal.open()
+}
